@@ -9,3 +9,11 @@
 .background {
 	background-color: pink;
 } 
+.email {
+	font-family: "Montserrat";
+	
+}
+.h2 {
+	color: maroon;
+	margin-left: 10px;
+}

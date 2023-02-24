@@ -2,10 +2,13 @@
 	<HEAD>
 		<TITLE> Jade Bell-About Me </Title>
 		<link rel="stylesheet" type="text/css" href="./Stylesheet/stylesheet.css" />
+		<script type=""text/javascript src="./js/JavascriptFile.js"></script>
+		
 	</HEAD>
 	
-	<BODY class="background">
+	<BODY class="background" id="SB">
 		<P> <h1 class="red">  About Me </h1> </P>
+		
 		<P class="font"> My name is Jade Bell. I am from Cincinnati, Ohio currently attending Northern Kentucky University.
 			<BR/> My major is Computer Science with a minor in Mathematics.
 			<BR/> <BR/> I like to draw and play mobile games.
@@ -26,10 +29,15 @@
 				<LI> RnB, K-Pop, and Gospel Music </LI>
 			</UL>
 		<BR> </P>
-		<DIV class="email">
+		
+		<DIV class="email" >
 		<h2> <P CLASS="H2"> What is your email?</h2> </P>
-			Enter here: &nbsp <INPUT type= "text" value:"Submit"/>
+		<form>
+			Enter here: <input type="text" />
+			<input type="button" value="Submit" onclick="submitButton()"/>
+		</form>
 		</DIV>
+		
 		<P> Favorite Movies, TV Shows:
 			<OL class ="font">
 				<LI> Bob's Burgers </LI>
@@ -37,6 +45,7 @@
 				<LI> Central Intelligence </LI> 
 			</OL>
 		<BR> </P>
+		
 		Table Time!
 		<TABLE BORDER ="2px">
 		<TR>
@@ -54,6 +63,11 @@
 		<TD>10.0</TD>
 		</TR>
 		</TABLE>
+		
+		<BR></BR>
+		<P>
+			document.write("Largest number in list [1,2,3,4,5] is" + largeNumber());
+
 	</BODY>
 	</HTML>
 		
